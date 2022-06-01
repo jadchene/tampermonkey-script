@@ -19,11 +19,17 @@
     $('aside[aria-label="更多结果"]').remove();
     $('#b_results').css('width','60%')
     $('#b_results').css('margin-left','15%')
-    $('.b_rs').hide();
-    $('.b_msg').hide();
-    $('.b_ans').hide();
+    $('.b_rs').remove();
+    $('.b_msg').remove();
+    $('.b_ans').remove();
     $('aside[aria-label="Additional Results"]').remove();
-    $('.Topstory-mainColumn').css('width','100%')
+    $('.Topstory-mainColumn').css('width','100%');
+    $('.b_algo').hover(function(){
+       $(this).css("box-shadow","1px 1px 10px #cccccc");
+        $(this).css("border-radius","0");
+    },function(){
+       $(this).css("box-shadow","none");
+    });
 
     $('.GlobalSideBar').remove();
     setInterval(
@@ -31,7 +37,15 @@
         $('.TopstoryItem--advertCard').remove();
         $('.VideoAnswerPlayer').remove();
           $('.ArticleItem').parent().parent().parent().remove();
+          $('.RichContent-cover').remove();
+          $('.TopstoryItem').hover(function(){
+              $(this).css("box-shadow","1px 1px 10px #cccccc");
+              $(this).css("border-radius","0");
+           },function(){
+             $(this).css("box-shadow","none");
+         });
       },1000
     );
+
 
 })();
