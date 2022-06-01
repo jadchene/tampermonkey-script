@@ -1,0 +1,25 @@
+// ==UserScript==
+// @name         beautify
+// @namespace    http://tampermonkey.net/chenjd
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        *://www.bing.com/search?*
+// @match        *://cn.bing.com/search?*
+// @require      http://cdn.staticfile.org/jquery/2.0.0/jquery.min.js
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=bing.com
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Your code here...
+    $('aside[aria-label="更多结果"]').hide();
+    $('#b_results').css('width','60%')
+    $('#b_results').css('margin-left','15%')
+    $('.b_rs').hide();
+    $('.b_msg').hide();
+    $('.b_ans').hide();
+    $('aside[aria-label="Additional Results"]').hide();
+})();
