@@ -28,6 +28,9 @@
     $('#b_tween').css('padding-left','28%');
     $('#lMapContainer').remove();
     $('.scs_child_rpr').remove();
+    $('.b_vList').remove();
+    $('.b_algoArticleTextCarousel').remove();
+    $('.b_richcard').remove();
     $('.b_rs').remove();
     $('.b_msg').remove();
     $('.b_ans').remove();
