@@ -24,10 +24,13 @@
     $('.b_ans').hide();
     $('aside[aria-label="Additional Results"]').remove();
 
+
     $('.GlobalSideBar').remove();
     setInterval(
       function(){
         $('.TopstoryItem--advertCard').remove();
+        $('.VideoAnswerPlayer').remove();
+          $('.ArticleItem').remove();
       },1000
     );
 
