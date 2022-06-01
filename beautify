@@ -6,7 +6,8 @@
 // @author       You
 // @match        *://www.bing.com/search?*
 // @match        *://cn.bing.com/search?*
-// @require      http://cdn.staticfile.org/jquery/2.0.0/jquery.min.js
+// @match        *://*.zhihu.com/*
+// @require      http://cdn.staticfile.org/jquery/3.6.0/jquery.min.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bing.com
 // @grant        none
 // ==/UserScript==
@@ -15,11 +16,19 @@
     'use strict';
 
     // Your code here...
-    $('aside[aria-label="更多结果"]').hide();
+    $('aside[aria-label="更多结果"]').remove();
     $('#b_results').css('width','60%')
     $('#b_results').css('margin-left','15%')
     $('.b_rs').hide();
     $('.b_msg').hide();
     $('.b_ans').hide();
-    $('aside[aria-label="Additional Results"]').hide();
+    $('aside[aria-label="Additional Results"]').remove();
+
+    $('.GlobalSideBar').remove();
+    setInterval(
+      function(){
+        $('.TopstoryItem--advertCard').remove();
+      },1000
+    );
+
 })();
