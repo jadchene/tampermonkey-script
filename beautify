@@ -22,6 +22,7 @@
     $('.b_rs').remove();
     $('.b_msg').remove();
     $('.b_ans').remove();
+    $('#b_footer').remove();
     $('aside[aria-label="Additional Results"]').remove();
     $('.Topstory-mainColumn').css('width','100%');
     $('.b_algo').hover(function(){
