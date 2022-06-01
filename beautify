@@ -47,6 +47,8 @@
            },function(){
              $(this).css("box-shadow","none");
          });
+          $('.Question-sideColumn').remove();
+          $('.Question-mainColumn').css('width','100%');
       },1000
     );
 
