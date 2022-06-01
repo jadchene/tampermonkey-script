@@ -17,8 +17,17 @@
 
     // Your code here...
     $('aside[aria-label="更多结果"]').remove();
-    $('#b_results').css('width','60%')
-    $('#b_results').css('margin-left','15%')
+    $('#b_results').css('width','60%');
+    //$('#sb_form').css('display','none');
+    $('.rc_gb_seemore').remove();
+    $('.inner').remove();
+    $('#mfa_root').remove();
+    $('.b_gobig_feedback').remove();
+    $('#b_results').css('margin-left','15%');
+    $('#b_header').css('padding-left','25%');
+    $('#b_tween').css('padding-left','28%');
+    $('#lMapContainer').remove();
+    $('.scs_child_rpr').remove();
     $('.b_rs').remove();
     $('.b_msg').remove();
     $('.b_ans').remove();
@@ -49,6 +58,7 @@
          });
           $('.Question-sideColumn').remove();
           $('.Question-mainColumn').css('width','100%');
+          $('.scs_child_rpr').remove();
       },1000
     );
 
