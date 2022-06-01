@@ -25,6 +25,7 @@
     $('#b_footer').remove();
     $('aside[aria-label="Additional Results"]').remove();
     $('.Topstory-mainColumn').css('width','100%');
+    $('.Question-mainColumn').css('width','100%');
     $('.b_algo').hover(function(){
        $(this).css("box-shadow","1px 1px 10px #cccccc");
         $(this).css("border-radius","0");
@@ -33,6 +34,7 @@
     });
 
     $('.GlobalSideBar').remove();
+    $('.Question-sideColumn').remove();
     setInterval(
       function(){
         $('.TopstoryItem--advertCard').remove();
