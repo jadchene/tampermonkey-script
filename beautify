@@ -35,6 +35,7 @@
     $('aside[aria-label="Additional Results"]').remove();
     $('.Topstory-mainColumn').css('width','100%');
     $('.Question-mainColumn').css('width','100%');
+    $('.QuestionWaiting-mainColumn').css('width','100%');
     $('.b_algo').hover(function(){
        $(this).css("box-shadow","1px 1px 10px #cccccc");
         $(this).css("border-radius","0");
