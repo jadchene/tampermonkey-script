@@ -35,6 +35,8 @@
     $('.b_msg').remove();
     $('.b_ans').remove();
     $('#b_footer').remove();
+    $('.SearchSideBar').remove();
+    $('.SearchMain').css('width','100%');
     $('aside[aria-label="Additional Results"]').remove();
     $('.Topstory-mainColumn').css('width','100%');
     $('.Question-mainColumn').css('width','100%');
