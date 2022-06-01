@@ -23,14 +23,14 @@
     $('.b_msg').hide();
     $('.b_ans').hide();
     $('aside[aria-label="Additional Results"]').remove();
-
+    $('.Topstory-mainColumn').css('width','100%')
 
     $('.GlobalSideBar').remove();
     setInterval(
       function(){
         $('.TopstoryItem--advertCard').remove();
         $('.VideoAnswerPlayer').remove();
-          $('.ArticleItem').remove();
+          $('.ArticleItem').parent().parent().parent().remove();
       },1000
     );
 
