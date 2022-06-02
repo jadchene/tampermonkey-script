@@ -19,6 +19,7 @@
     $('aside[aria-label="更多结果"]').remove();
     $('#b_results').css('width','60%');
     //$('#sb_form').css('display','none');
+    $('#b_pole').remove();
     $('.rc_gb_seemore').remove();
     $('.inner').remove();
     $('#mfa_root').remove();
