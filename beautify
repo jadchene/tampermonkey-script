@@ -36,6 +36,7 @@
     $('.b_msg').remove();
     $('.b_ans').remove();
     $('#b_footer').remove();
+
     $('.SearchSideBar').remove();
     $('.SearchMain').css('width','100%');
     $('aside[aria-label="Additional Results"]').remove();
@@ -66,6 +67,7 @@
           $('.Question-sideColumn').remove();
           $('.Question-mainColumn').css('width','100%');
           $('.scs_child_rpr').remove();
+          $('.Pc-Business-Card-PcTopFeedBanner').remove();
       },1000
     );
 
