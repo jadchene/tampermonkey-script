@@ -36,7 +36,7 @@
     $('.b_msg').remove();
     $('.b_ans').remove();
     $('#b_footer').remove();
-
+    $('.b_slidesContainer').remove();
     $('.SearchSideBar').remove();
     $('.SearchMain').css('width','100%');
     $('aside[aria-label="Additional Results"]').remove();
