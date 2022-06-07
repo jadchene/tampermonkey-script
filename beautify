@@ -36,6 +36,9 @@
     $('.b_msg').remove();
     $('.b_ans').remove();
     $('#b_footer').remove();
+    $('.b_rc_gb_bottom_cover').remove();
+    $('.b_algo').removeClass('b_rc_gb_template');
+    $('.b_algo').removeClass('b_algoBorder');
     $('.b_slidesContainer').remove();
     $('.SearchSideBar').remove();
     $('.SearchMain').css('width','100%');
