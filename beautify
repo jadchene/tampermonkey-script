@@ -15,66 +15,59 @@
 (function() {
     'use strict';
 
-    // Your code here...
-    $('aside[aria-label="更多结果"]').remove();
-    $('#b_results').css('width','60%');
-    //$('#sb_form').css('display','none');
-    $('#b_pole').remove();
-    $('.rc_gb_seemore').remove();
-    $('.inner').remove();
-    $('#mfa_root').remove();
-    $('.b_gobig_feedback').remove();
+    const toRemoveArr=['aside[aria-label="更多结果"]','#b_pole','.rc_gb_seemore','.inner','#mfa_root','.b_gobig_feedback','#lMapContainer','.scs_child_rpr','.b_vList','.b_algoArticleTextCarousel',
+                     '.b_richcard','.b_rs','.b_msg','.b_ans','#b_footer','.b_rc_gb_bottom_cover','.b_slidesContainer','.SearchSideBar','aside[aria-label="Additional Results"]','.ContentItem-more',
+                     '.GlobalSideBar','.Question-sideColumn'
+                    ];
+
+    const toRemoveIntervalArr=['.TopstoryItem--advertCard','.VideoAnswerPlayer','.RichContent-cover','.Question-sideColumn','.scs_child_rpr','.Pc-Business-Card-PcTopFeedBanner','.ContentItem-more'];
+
+    const toRemoveArrStr=toRemoveArr.join();
+
+    const toRemoveIntervalArrStr=toRemoveIntervalArr.join();
+
+    const toWidth100Arr=['.SearchMain','.Topstory-mainColumn','.Question-mainColumn','.QuestionWaiting-mainColumn','.ListShortcut'];
+
+    cssWidth('#b_results','60%');
     $('#b_results').css('margin-left','15%');
     $('#b_header').css('padding-left','25%');
     $('#b_tween').css('padding-left','28%');
-    $('#lMapContainer').remove();
-    $('.scs_child_rpr').remove();
-    $('.b_vList').remove();
-    $('.b_algoArticleTextCarousel').remove();
-    $('.b_richcard').remove();
-    $('.b_rs').remove();
-    $('.b_msg').remove();
-    $('.b_ans').remove();
-    $('#b_footer').remove();
-    $('.b_rc_gb_bottom_cover').remove();
+
+    for(let selector of toWidth100Arr){
+      cssWidth100(selector);
+    }
+
     $('.b_algo').removeClass('b_rc_gb_template');
     $('.b_algo').removeClass('b_algoBorder');
-    $('.b_slidesContainer').remove();
-    $('.SearchSideBar').remove();
-    $('.SearchMain').css('width','100%');
-    $('aside[aria-label="Additional Results"]').remove();
-    $('.Topstory-mainColumn').css('width','100%');
-    $('.Question-mainColumn').css('width','100%');
-    $('.QuestionWaiting-mainColumn').css('width','100%');
-    $('.ListShortcut').css('width','100%');
-    $('.b_algo').hover(function(){
-       $(this).css("box-shadow","1px 1px 10px #cccccc");
-        $(this).css("border-radius","0");
-    },function(){
-       $(this).css("box-shadow","none");
-    });
-    $('.ContentItem-more').remove();
-    $('.GlobalSideBar').remove();
-    $('.Question-sideColumn').remove();
+
+    listItemBeautify('.b_algo');
+
+    $(toRemoveArrStr).remove();
+
     setInterval(
       function(){
-        $('.TopstoryItem--advertCard').remove();
-        $('.VideoAnswerPlayer').remove();
+          $(toRemoveIntervalArrStr).remove();
           $('.ArticleItem').parent().parent().parent().remove();
-          $('.RichContent-cover').remove();
-          $('.TopstoryItem').hover(function(){
+          cssWidth100('.Question-mainColumn');
+          listItemBeautify('.TopstoryItem');
+      },1000
+    );
+
+})();
+
+function listItemBeautify(selector){
+  $(selector).hover(function(){
               $(this).css("box-shadow","1px 1px 10px #cccccc");
               $(this).css("border-radius","0");
            },function(){
              $(this).css("box-shadow","none");
          });
-          $('.Question-sideColumn').remove();
-          $('.Question-mainColumn').css('width','100%');
-          $('.scs_child_rpr').remove();
-          $('.Pc-Business-Card-PcTopFeedBanner').remove();
-          $('.ContentItem-more').remove();
-      },1000
-    );
+}
 
+function cssWidth(selector,size){
+  $(selector).css('width',size);
+}
 
-})();
+function cssWidth100(selector){
+  cssWidth(selector,'100%');
+}
