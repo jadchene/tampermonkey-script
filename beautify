@@ -83,10 +83,11 @@ function removeZhihuVideoCard(){
     if(toRemoveVideoCard.hasClass('AnswerCard')){
       toRemoveVideoCard.hide();
     }
+    $('.css-n608gg').parent().parent().parent().hide();
     $('.ZVideoItem-video').next().remove();
     $('.ZVideoItem-video').remove();
     $('.VideoAnswerPlayer').next().remove();
     $('.VideoAnswerPlayer').remove();
-    $('.css-n608gg').parent().parent().parent().remove();
+   
     $('.LabelContainer').parent().parent().remove();
 }
