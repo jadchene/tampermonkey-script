@@ -48,6 +48,7 @@
       function(){
           $(toRemoveIntervalArrStr).remove();
           $('.ArticleItem').parent().parent().parent().remove();
+          $('.ZVideoItem').parent().parent().parent().remove();
           cssWidth100('.Question-mainColumn');
           listItemBeautify('.TopstoryItem');
       },1000
