@@ -59,7 +59,6 @@
           listItemBeautify('.TopstoryItem');
           removeZhihuVideoCard();
           cssWidth('.AnswerItem img','50%');
-
       },1000
     );
 
@@ -93,6 +92,5 @@ function removeZhihuVideoCard(){
     $('.ZVideoItem-video').remove();
     $('.VideoAnswerPlayer').next().remove();
     $('.VideoAnswerPlayer').remove();
-   
     $('.LabelContainer').parent().parent().remove();
 }
