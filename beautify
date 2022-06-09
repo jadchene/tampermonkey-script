@@ -46,6 +46,11 @@
 
     removeZhihuVideoCard();
 
+    const toRemoveZhihuTop=$('.Topstory').children().eq(0);
+    if(!toRemoveZhihuTop.hasClass('Topstory-container')){
+      toRemoveZhihuTop.remove();
+    }
+
     setInterval(
       function(){
           $(toRemoveIntervalArrStr).remove();
@@ -53,7 +58,7 @@
           cssWidth100('.Question-mainColumn');
           listItemBeautify('.TopstoryItem');
           removeZhihuVideoCard();
-          cssWidth('img','50%');
+          cssWidth('.AnswerItem img','50%');
 
       },1000
     );
