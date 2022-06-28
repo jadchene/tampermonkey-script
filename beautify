@@ -58,7 +58,7 @@
           cssWidth100('.Question-mainColumn');
           listItemBeautify('.TopstoryItem');
           removeZhihuVideoCard();
-          $('.RichContent-inner img').not('img[eeimg=1]').css('width','50%');
+          $('.RichContent-inner img').css('max-width','480px');
       },1000
     );
 
