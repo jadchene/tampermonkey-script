@@ -17,7 +17,7 @@
 
     const toRemoveArr=['aside[aria-label="更多结果"]','#b_pole','.rc_gb_seemore','.inner','#mfa_root','.b_gobig_feedback','#lMapContainer','.scs_child_rpr','.b_vList','.b_algoArticleTextCarousel',
                      '.b_richcard','.b_rs','.b_msg','.b_ans','#b_footer','.b_rc_gb_bottom_cover','.b_slidesContainer','.SearchSideBar','aside[aria-label="Additional Results"]','.ContentItem-more',
-                     '.GlobalSideBar','.Question-sideColumn','#b_opalpers','.EduSectionItem-video','.FollowButton','.css-1qyytj7','.css-knqde','.b_RichCardAnswerV2','#b_notificationContainer_bop'
+                     '.GlobalSideBar','.Question-sideColumn','#b_opalpers','.EduSectionItem-video','.FollowButton','.css-1qyytj7','.css-knqde','.b_RichCardAnswerV2','#b_notificationContainer_bop','#recentSearchLGContainer'
                     ];
 
     const toRemoveIntervalArr=['.TopstoryItem--advertCard','.RichContent-cover','.Question-sideColumn','.scs_child_rpr','.Pc-Business-Card-PcTopFeedBanner','.ContentItem-more','.EduSectionItem-video','#b_opalpers','.FollowButton','#b_notificationContainer_bop'];
