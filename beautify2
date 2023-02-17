@@ -17,7 +17,7 @@
 
     const toRemoveArr=['#ev_talkbox_wrapper','aside','#relatedSearchesLGWContainer','#mfa_root','#b_footer','.b_ans','.b_msg','.pageRecoContainer'];
 
-    const toRemoveIntervalArr=['[data-za-detail-view-path-module=RightSideBar]','.Reward','.FollowButton','.LabelContainer-wrapper','.rh_reedm','.b_imagePair>.inner'];
+    const toRemoveIntervalArr=['[data-za-detail-view-path-module=RightSideBar]','.Reward','.FollowButton','.LabelContainer-wrapper','.rh_reedm','.b_imagePair>.inner','.css-wcswpi'];
 
     const toRemoveArrStr=toRemoveArr.join();
 
@@ -26,6 +26,7 @@
     //zhihu
     cssWidth100('.Topstory-mainColumn');
     cssWidth100('.QuestionWaiting-mainColumn');
+    cssWidth100('.ListShortcut');
 
     //bing
     cssWidth('#b_results','60%');
