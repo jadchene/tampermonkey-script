@@ -44,6 +44,7 @@
           cssWidth100('.Question-mainColumn');
           cssWidth100('.b_imagePair');
            cssWidth('#b_results','60%');
+          $('#b_results').css('margin-left','15%');
       },1000
     );
 
