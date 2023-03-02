@@ -45,6 +45,8 @@
           cssWidth100('.b_imagePair');
            cssWidth('#b_results','60%');
           $('#b_results').css('margin-left','15%');
+              $('#b_header').css('padding-left','25%');
+    $('#b_tween').css('padding-left','28%');
       },1000
     );
 
