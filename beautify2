@@ -15,7 +15,7 @@
 (function() {
     'use strict';
 
-    const toRemoveArr=['#ev_talkbox_wrapper','aside','#relatedSearchesLGWContainer','#mfa_root','#b_footer','.b_ans','.b_msg','.pageRecoContainer','.css-knqde'];
+    const toRemoveArr=['#ev_talkbox_wrapper','aside','#relatedSearchesLGWContainer','#mfa_root','#b_footer','.b_ans','.b_msg','.pageRecoContainer','.css-knqde','#b_pole'];
 
     const toRemoveIntervalArr=['[data-za-detail-view-path-module=RightSideBar]','.Reward','.FollowButton','.LabelContainer-wrapper','.rh_reedm','.b_imagePair>.inner','.css-wcswpi','.scs_child_rpr','.b_ans','#ev_talkbox_wrapper','#mfa_root'];
 
