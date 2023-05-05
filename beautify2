@@ -7,6 +7,7 @@
 // @match        *://www.bing.com/search?*
 // @match        *://cn.bing.com/search?*
 // @match        *://*.zhihu.com/*
+// @match        *://*.google.com/*
 // @require      http://cdn.staticfile.org/jquery/3.6.0/jquery.min.js
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=bing.com
 // @grant        none
@@ -15,9 +16,9 @@
 (function() {
     'use strict';
 
-    const toRemoveArr=['#ev_talkbox_wrapper','aside','#relatedSearchesLGWContainer','#mfa_root','#b_footer','.b_ans','.b_msg','.pageRecoContainer','.css-knqde','#b_pole','.b_ad','#b_algospacing','.b-conclfb-wrapper','li:has(".ad_dse")'];
+    const toRemoveArr=['#ev_talkbox_wrapper','aside','#relatedSearchesLGWContainer','#mfa_root','#b_footer','.b_ans','.b_msg','.pageRecoContainer','.css-knqde','#b_pole','.b_ad','#b_algospacing','.b-conclfb-wrapper','li:has(".ad_dse")','.M8OgIe','#rhs'];
 
-    const toRemoveIntervalArr=['[data-za-detail-view-path-module=RightSideBar]','.Reward','.FollowButton','.LabelContainer-wrapper','.rh_reedm','.b_imagePair>.inner','.css-wcswpi','.scs_child_rpr','.b_ans','#ev_talkbox_wrapper','#mfa_root'];
+    const toRemoveIntervalArr=['[data-za-detail-view-path-module=RightSideBar]','.Reward','.FollowButton','.LabelContainer-wrapper','.rh_reedm','.b_imagePair>.inner','.css-wcswpi','.scs_child_rpr','.b_ans','#ev_talkbox_wrapper','#mfa_root','.M8OgIe'];
 
     const toRemoveArrStr=toRemoveArr.join();
 
@@ -31,6 +32,22 @@
 
     //bing
     cssWidth('#b_results','60%');
+    //google
+    cssWidth('#center_col','1000px');
+    cssWidth('#rso>div','1000px');
+    cssWidth('#rso>div>div','1000px');
+    cssWidth('#rso>div>div>div','1000px');
+    cssWidth('#rso>div>div>div>div','1000px');
+    $('.s6JM6d').css('margin-left','0');
+    $('.GyAeWb').css('justify-content','center');
+    $('.GyAeWb').css('max-width','5000px');
+    $('.Q3DXx.yIbDgf').css('justify-content','center');
+    $('.Q3DXx').css('margin-left','50px');
+    $('.IC1Ck').css('justify-content','center');
+    $('#appbar').css('margin-left','25%');
+    $('#top_nav').css('margin-left','9%');
+    listItemBeautify('#rso>div');
+
     $('#b_results').css('margin-left','15%');
     $('#b_header').css('padding-left','25%');
     $('#b_tween').css('padding-left','28%');
@@ -43,15 +60,24 @@
           $('.is-collapsed>.RichContent-cover').hide();
           cssWidth100('.Question-mainColumn');
           cssWidth100('.b_imagePair');
-           cssWidth('#b_results','60%');
+          cssWidth('#b_results','60%');
           $('#b_results').css('margin-left','15%');
-              $('#b_header').css('padding-left','25%');
-    $('#b_tween').css('padding-left','28%');
+          $('#b_header').css('padding-left','25%');
+          $('#b_tween').css('padding-left','28%');
+          listItemBeautify('#rso>div');
       },1000
     );
 
 })();
 
+function listItemBeautify(selector){
+  $(selector).hover(function(){
+              $(this).css("box-shadow","1px 1px 10px #cccccc");
+              $(this).css("border-radius","0");
+           },function(){
+             $(this).css("box-shadow","none");
+         });
+}
 
 function cssWidth(selector,size){
   $(selector).css('width',size);
