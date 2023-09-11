@@ -53,11 +53,11 @@
     $('#b_header').css('padding-left','25%');
     $('#b_tween').css('padding-left','28%');
 
-    $(toRemoveArrStr).remove();
+    $(toRemoveArrStr).hide();
 
     setInterval(
       function(){
-          $(toRemoveIntervalArrStr).remove();
+          $(toRemoveIntervalArrStr).hide();
           $('.is-collapsed>.RichContent-cover').hide();
           cssWidth100('.Question-mainColumn');
           cssWidth100('.b_imagePair');
