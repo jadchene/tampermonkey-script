@@ -19,7 +19,7 @@
 
     const toRemoveArr=['#ev_talkbox_wrapper','aside','#relatedSearchesLGWContainer','#mfa_root','#b_footer','.b_ans','.b_msg','.pageRecoContainer','.css-knqde','#b_pole','.b_ad','#b_algospacing','.b-conclfb-wrapper','li:has(".ad_dse")','.M8OgIe','#rhs','.TopstoryItem--advertCard','.ZVideoItem-video','#taw','.TrmO7','.ArticleItem','.is-shown'];
 
-    const toRemoveIntervalArr=['[data-za-detail-view-path-module=RightSideBar]','.Reward','.FollowButton','.LabelContainer-wrapper','.rh_reedm','.b_imagePair>.inner','.css-wcswpi','.scs_child_rpr','.b_ans','#ev_talkbox_wrapper','#mfa_root','.M8OgIe','.TopstoryItem--advertCard','.ZVideoItem-video','.ArticleItem','.is-shown','.css-i2yo90','.Pc-Business-Card-PcTopFeedBanner'];
+    const toRemoveIntervalArr=['[data-za-detail-view-path-module=RightSideBar]','.Reward','.FollowButton','.LabelContainer-wrapper','.rh_reedm','.b_imagePair>.inner','.css-wcswpi','.scs_child_rpr','.b_ans','#ev_talkbox_wrapper','#mfa_root','.M8OgIe','.TopstoryItem--advertCard','.ZVideoItem-video','.ArticleItem','.is-shown','.css-i2yo90','.Pc-Business-Card-PcTopFeedBanner','.VideoAnswerPlayer'];
 
     const toRemoveArrStr=toRemoveArr.join();
 
