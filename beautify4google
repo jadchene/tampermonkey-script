@@ -14,9 +14,9 @@
 (function() {
     'use strict';
 
-    const toRemoveArr=['.TQc1id','#taw','.crJ18e','.cUnQKe','.jmjoTe','.zp6Lyf','.LnCrMe','.ULSxyf'];
+    const toRemoveArr=['.TQc1id','#taw','.crJ18e','.cUnQKe','.jmjoTe','.zp6Lyf','.LnCrMe','.ULSxyf','.M8OgIe','#bottomads','.ITCGwe','.gY2b2c'];
 
-    const toRemoveIntervalArr=['#sfooter','.LnCrMe'];
+    const toRemoveIntervalArr=['#sfooter','.LnCrMe','#tvcap','#tadsb','.ITCGwe','.gY2b2c'];
 
     const toRemoveArrStr=toRemoveArr.join();
 
