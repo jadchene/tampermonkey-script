@@ -1,0 +1,57 @@
+// ==UserScript==
+// @name         beautify4google
+// @namespace    http://tampermonkey.net/chenjd
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        *://*.google.com/*
+// @match        *://*.google.com.hk/*
+// @require      http://cdn.staticfile.org/jquery/3.6.0/jquery.min.js
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    const toRemoveArr=['.TQc1id','#taw','.crJ18e','.cUnQKe'];
+
+    const toRemoveIntervalArr=['.ULSxyf','#sfooter'];
+
+    const toRemoveArrStr=toRemoveArr.join();
+
+    const toRemoveIntervalArrStr=toRemoveIntervalArr.join();
+
+    $(toRemoveArrStr).hide();
+
+    cssWidth('#center_col','1000px');
+    cssWidth('#rso>div>div>div>div','1000px');
+    $('.s6JM6d').css('margin-left','0');
+    $('.GyAeWb').css('justify-content','center');
+    $('.GyAeWb').css('max-width','5000px');
+    $('.Q3DXx.yIbDgf').css('justify-content','center');
+    listItemBeautify('.MjjYud')
+
+    setInterval(
+      function(){
+          $(toRemoveIntervalArrStr).hide();
+          listItemBeautify('.MjjYud')
+      },1500);
+})();
+
+function listItemBeautify(selector){
+  $(selector).hover(function(){
+              $(this).css("box-shadow","1px 1px 10px #cccccc");
+              $(this).css("border-radius","0");
+           },function(){
+             $(this).css("box-shadow","none");
+         });
+}
+
+function cssWidth(selector,size){
+  $(selector).css('width',size);
+}
+
+function cssWidth100(selector){
+  cssWidth(selector,'100%');
+}
