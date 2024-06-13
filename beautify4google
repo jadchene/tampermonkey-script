@@ -14,9 +14,9 @@
 (function() {
     'use strict';
 
-    const toRemoveArr=['.TQc1id','#taw','.crJ18e','.cUnQKe','.jmjoTe','.zp6Lyf','.LnCrMe'];
+    const toRemoveArr=['.TQc1id','#taw','.crJ18e','.cUnQKe','.jmjoTe','.zp6Lyf','.LnCrMe','.ULSxyf'];
 
-    const toRemoveIntervalArr=['.ULSxyf','#sfooter','.LnCrMe'];
+    const toRemoveIntervalArr=['#sfooter','.LnCrMe'];
 
     const toRemoveArrStr=toRemoveArr.join();
 
