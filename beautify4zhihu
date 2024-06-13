@@ -1,0 +1,57 @@
+// ==UserScript==
+// @name         beautify4zhihu
+// @namespace    http://tampermonkey.net/chenjd
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        *://*.zhihu.com/*
+// @icon         https://static.zhihu.com/heifetz/favicon.ico
+// @require      http://cdn.staticfile.org/jquery/3.6.0/jquery.min.js
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    const toRemoveArr=['.css-1qyytj7','.is-collapsed>.RichContent-cover','.Question-sideColumn','.FollowButton','.LabelContainer-wrapper','.RichText-ADLinkCardContainer','.Reward'
+                      ,'.Pc-word','.VideoAnswerPlayer'];
+
+    const toRemoveIntervalArr=['.is-collapsed>.RichContent-cover','.Question-sideColumn','.FollowButton','.LabelContainer-wrapper','.RichText-ADLinkCardContainer','.Reward'
+                              ,'.Pc-word','.List-item:has(".VideoAnswerPlayer")'];
+
+    const toRemoveArrStr=toRemoveArr.join();
+
+    const toRemoveIntervalArrStr=toRemoveIntervalArr.join();
+
+    $(toRemoveArrStr).hide();
+
+    cssWidth100('.Topstory-mainColumn');
+    cssWidth100('.QuestionWaiting-mainColumn');
+    cssWidth100('.ListShortcut');
+    cssWidth100('.SearchMain');
+    cssWidth100('.Question-mainColumn');
+
+    setInterval(
+      function(){
+          $(toRemoveIntervalArrStr).hide();
+          cssWidth100('.Question-mainColumn');
+
+      },1500);
+})();
+
+function listItemBeautify(selector){
+  $(selector).hover(function(){
+              $(this).css("box-shadow","1px 1px 10px #cccccc");
+              $(this).css("border-radius","0");
+           },function(){
+             $(this).css("box-shadow","none");
+         });
+}
+
+function cssWidth(selector,size){
+  $(selector).css('width',size);
+}
+
+function cssWidth100(selector){
+  cssWidth(selector,'100%');
+}
