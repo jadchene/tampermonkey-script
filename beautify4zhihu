@@ -31,12 +31,17 @@
     cssWidth100('.SearchMain');
     cssWidth100('.Question-mainColumn');
 
-    setInterval(
-      function(){
-          $(toRemoveIntervalArrStr).hide();
+    window.addEventListener("scrollend", (event) => {
+        $(toRemoveIntervalArrStr).hide();
           cssWidth100('.Question-mainColumn');
+    });
 
-      },1500);
+//    setInterval(
+//      function(){
+//          $(toRemoveIntervalArrStr).hide();
+//          cssWidth100('.Question-mainColumn');
+
+//      },1500);
 })();
 
 function listItemBeautify(selector){
