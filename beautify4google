@@ -31,14 +31,20 @@
     $('.GyAeWb').css('justify-content','center');
     $('.GyAeWb').css('max-width','5000px');
     $('.Q3DXx.yIbDgf').css('justify-content','center');
-    listItemBeautify('.MjjYud')
+    listItemBeautify('.MjjYud');
 
-    setInterval(
-      function(){
-          $(toRemoveIntervalArrStr).hide();
+    window.addEventListener("scrollend", (event) => {
+        $(toRemoveIntervalArrStr).hide();
           cssWidth('.srKDX','1000px');
           listItemBeautify('.MjjYud')
-      },1500);
+    });
+
+//    setInterval(
+//      function(){
+//          $(toRemoveIntervalArrStr).hide();
+//          cssWidth('.srKDX','1000px');
+//          listItemBeautify('.MjjYud')
+//      },1500);
 })();
 
 function listItemBeautify(selector){
