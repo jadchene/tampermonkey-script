@@ -31,10 +31,11 @@
     cssWidth100('.SearchMain');
     cssWidth100('.Question-mainColumn');
 
-    window.addEventListener("scrollend", (event) => {
+    window.addEventListener("scrollend", debounce((event) => {
+        console.log('scrollend')
         $(toRemoveIntervalArrStr).hide();
           cssWidth100('.Question-mainColumn');
-    });
+    },1000));
 
 //    setInterval(
 //      function(){
@@ -43,6 +44,15 @@
 
 //      },1500);
 })();
+
+function debounce(fn, wait) {
+    var timeout = null;
+    return function() {
+        if(timeout !== null)
+                clearTimeout(timeout);
+        timeout = setTimeout(fn, wait);
+    }
+}
 
 function listItemBeautify(selector){
   $(selector).hover(function(){
