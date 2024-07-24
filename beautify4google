@@ -33,11 +33,11 @@
     $('.Q3DXx.yIbDgf').css('justify-content','center');
     listItemBeautify('.MjjYud');
 
-    window.addEventListener("scrollend", (event) => {
+    window.addEventListener("scrollend", debounce((event) => {
         $(toRemoveIntervalArrStr).hide();
           cssWidth('.srKDX','1000px');
           listItemBeautify('.MjjYud')
-    });
+    },1000));
 
 //    setInterval(
 //      function(){
@@ -46,6 +46,15 @@
 //          listItemBeautify('.MjjYud')
 //      },1500);
 })();
+
+function debounce(fn, wait) {
+    var timeout = null;
+    return function() {
+        if(timeout !== null)
+                clearTimeout(timeout);
+        timeout = setTimeout(fn, wait);
+    }
+}
 
 function listItemBeautify(selector){
   $(selector).hover(function(){
