@@ -14,10 +14,10 @@
     'use strict';
 
     const toRemoveArr=['.css-1qyytj7','.is-collapsed>.RichContent-cover','.Question-sideColumn','.FollowButton','.LabelContainer-wrapper','.RichText-ADLinkCardContainer','.Reward'
-                      ,'.Pc-word','.VideoAnswerPlayer','.TopstoryItem--advertCard','.css-knqde'];
+                      ,'.Pc-word','.VideoAnswerPlayer','.TopstoryItem--advertCard','.css-knqde','.ZVideoItem'];
 
     const toRemoveIntervalArr=['.is-collapsed>.RichContent-cover','.Question-sideColumn','.FollowButton','.LabelContainer-wrapper','.RichText-ADLinkCardContainer','.Reward'
-                              ,'.Pc-word','.List-item:has(".VideoAnswerPlayer")','.TopstoryItem--advertCard','.SearchResult-Card:has(".RelevantQuery")','.is-shown','.Pc-Business-Card-PcTopFeedBanner'];
+                              ,'.Pc-word','.List-item:has(".VideoAnswerPlayer")','.TopstoryItem--advertCard','.SearchResult-Card:has(".RelevantQuery")','.is-shown','.Pc-Business-Card-PcTopFeedBanner','.ZVideoItem'];
 
     const toRemoveArrStr=toRemoveArr.join();
 
