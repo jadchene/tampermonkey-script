@@ -27,7 +27,7 @@
     cssWidth('#center_col','1000px');
     cssWidth('#rso>div>div>div>div','1000px');
     cssWidth('.srKDX','1000px');
-    $('.s6JM6d').css('margin-left','0');
+    $('.s6JM6d').css('margin-left','80px');
     $('.GyAeWb').css('justify-content','center');
     $('.GyAeWb').css('max-width','5000px');
     $('.Q3DXx.yIbDgf').css('justify-content','center');
