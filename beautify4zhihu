@@ -17,7 +17,7 @@
                       ,'.Pc-word','.VideoAnswerPlayer','.TopstoryItem--advertCard','.css-knqde','.ZVideoItem'];
 
     const toRemoveIntervalArr=['.is-collapsed>.RichContent-cover','.Question-sideColumn','.FollowButton','.LabelContainer-wrapper','.RichText-ADLinkCardContainer','.Reward'
-                              ,'.Pc-word','.List-item:has(".VideoAnswerPlayer")','.TopstoryItem--advertCard','.SearchResult-Card:has(".RelevantQuery")','.is-shown','.Pc-Business-Card-PcTopFeedBanner','.ZVideoItem'];
+                              ,'.Pc-word','.List-item:has(".VideoAnswerPlayer")','.TopstoryItem--advertCard','.SearchResult-Card:has(".RelevantQuery")','.is-shown','.Pc-Business-Card-PcTopFeedBanner','.ZVideoItem','.Pc-word-new'];
 
     const toRemoveArrStr=toRemoveArr.join();
 
