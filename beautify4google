@@ -31,6 +31,8 @@
     $('.GyAeWb').css('justify-content','center');
     $('.GyAeWb').css('max-width','5000px');
     $('.Q3DXx.yIbDgf').css('justify-content','center');
+    $('.GG4mbd').css('margin-left','25%');
+    $('.NDnoQ').css('margin-left','15%');
     listItemBeautify('.MjjYud');
 
     window.addEventListener("scrollend", debounce((event) => {
