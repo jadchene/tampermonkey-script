@@ -14,15 +14,16 @@
 (function() {
     'use strict';
 
-    const toRemoveArr=['#taw','.crJ18e','.cUnQKe','.jmjoTe','.zp6Lyf','.LnCrMe','.M8OgIe','#bottomads','.ITCGwe','.gY2b2c','.XqFnDf','.xQjRM','.JNkvid','#rhs','.ULSxyf'];
+    const toRemoveArr=['#taw','.crJ18e','.cUnQKe','.jmjoTe','.zp6Lyf','.LnCrMe','.M8OgIe','#bottomads','.ITCGwe','.gY2b2c','.XqFnDf','.xQjRM','.JNkvid','#rhs','.ULSxyf','#sfooter'];
 
-    const toRemoveIntervalArr=['#sfooter','.LnCrMe','#tvcap','#tadsb','.ITCGwe','.gY2b2c','.ULSxyf','#Sva75c'];
+    const toRemoveIntervalArr=['.LnCrMe','#tvcap','#tadsb','.ITCGwe','.gY2b2c','.ULSxyf','#Sva75c'];
 
     const toRemoveArrStr=toRemoveArr.join();
 
     const toRemoveIntervalArrStr=toRemoveIntervalArr.join();
 
-    $(toRemoveArrStr).hide();
+    $(toRemoveArrStr).hide()
+    setTimeout(()=>$(toRemoveArrStr).hide(),1000);
 
     cssWidth('#center_col','1000px');
     cssWidth('#rso>div>div>div>div','1000px');
