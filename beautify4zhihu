@@ -14,7 +14,7 @@
     'use strict';
 
     const toRemoveArr=['.css-1qyytj7','.is-collapsed>.RichContent-cover','.Question-sideColumn','.FollowButton','.LabelContainer-wrapper','.RichText-ADLinkCardContainer','.Reward'
-                      ,'.Pc-word','.VideoAnswerPlayer','.TopstoryItem--advertCard','.css-knqde','.ZVideoItem','.WriteArea'];
+                      ,'.Pc-word','.VideoAnswerPlayer','.TopstoryItem--advertCard','.ZVideoItem','.WriteArea','#SearchMain + *'];
 
     const toRemoveIntervalArr=['.is-collapsed>.RichContent-cover','.Question-sideColumn','.FollowButton','.LabelContainer-wrapper','.RichText-ADLinkCardContainer','.Reward'
                               ,'.Pc-word','.List-item:has(".VideoAnswerPlayer")','.TopstoryItem--advertCard','.SearchResult-Card:has(".RelevantQuery")','.is-shown','.Pc-Business-Card-PcTopFeedBanner','.ZVideoItem','.Pc-word-new'];
@@ -23,7 +23,7 @@
 
     const toRemoveIntervalArrStr=toRemoveIntervalArr.join();
 
-    $(toRemoveArrStr).hide();
+    setTimeout(()=>$(toRemoveArrStr).hide(),1000);
 
     cssWidth100('.Topstory-mainColumn');
     cssWidth100('.QuestionWaiting-mainColumn');
