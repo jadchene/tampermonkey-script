@@ -23,13 +23,15 @@
 
     const toRemoveIntervalArrStr=toRemoveIntervalArr.join();
 
-    setTimeout(()=>$(toRemoveArrStr).hide(),1000);
-
+    
     cssWidth100('.Topstory-mainColumn');
     cssWidth100('.QuestionWaiting-mainColumn');
     cssWidth100('.ListShortcut');
     cssWidth100('.SearchMain');
     cssWidth100('.Question-mainColumn');
+
+    $(toRemoveArrStr).hide()
+    setTimeout(()=>$(toRemoveArrStr).hide(),1000);
 
     window.addEventListener("scrollend", debounce((event) => {
         console.log('scrollend')
