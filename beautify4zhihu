@@ -1,82 +1,49 @@
 // ==UserScript==
 // @name         beautify4zhihu
 // @namespace    http://tampermonkey.net/chenjd
-// @version      0.1
-// @description  try to take over the world!
+// @version      0.2
+// @description  simplify zhihu style
 // @author       You
 // @match        *://*.zhihu.com/*
 // @icon         https://static.zhihu.com/heifetz/favicon.ico
-// @require      http://cdn.staticfile.org/jquery/3.6.0/jquery.min.js
-// @grant        none
+// @grant        GM_addStyle
+// @run-at       document-start
 // ==/UserScript==
 
-(function() {
-    'use strict';
+(function () {
+  'use strict';
 
-    const toRemoveArr=['.css-1qyytj7','.is-collapsed>.RichContent-cover','.Question-sideColumn','.FollowButton','.LabelContainer-wrapper','.RichText-ADLinkCardContainer','.Reward'
-                      ,'.Pc-word','.VideoAnswerPlayer','.TopstoryItem--advertCard','.ZVideoItem','.WriteArea','#SearchMain + *'];
-
-    const toRemoveIntervalArr=['.is-collapsed>.RichContent-cover','.Question-sideColumn','.FollowButton','.LabelContainer-wrapper','.RichText-ADLinkCardContainer','.Reward'
-                              ,'.Pc-word','.List-item:has(".VideoAnswerPlayer")','.TopstoryItem--advertCard','.SearchResult-Card:has(".RelevantQuery")','.is-shown','.Pc-Business-Card-PcTopFeedBanner','.ZVideoItem','.Pc-word-new'];
-
-    const toRemoveArrStr=toRemoveArr.join();
-
-    const toRemoveIntervalArrStr=toRemoveIntervalArr.join();
-
-    
-    cssWidth100('.Topstory-mainColumn');
-    cssWidth100('.QuestionWaiting-mainColumn');
-    cssWidth100('.ListShortcut');
-    cssWidth100('.SearchMain');
-    cssWidth100('.Question-mainColumn');
-
-    $(toRemoveArrStr).hide()
-    setTimeout(()=>$(toRemoveArrStr).hide(),1000);
-    setTimeout(()=>$(toRemoveIntervalArr).hide(),1000);
-    setTimeout(()=>{
-          cssWidth100('.Topstory-mainColumn');
-          cssWidth100('.QuestionWaiting-mainColumn');
-          cssWidth100('.ListShortcut');
-          cssWidth100('.SearchMain');
-          cssWidth100('.Question-mainColumn');
-    },1000);
-
-    window.addEventListener("scrollend", debounce((event) => {
-        console.log('scrollend')
-        $(toRemoveIntervalArrStr).hide();
-          cssWidth100('.Question-mainColumn');
-    },1000));
-
-//    setInterval(
-//      function(){
-//          $(toRemoveIntervalArrStr).hide();
-//          cssWidth100('.Question-mainColumn');
-
-//      },1500);
-})();
-
-function debounce(fn, wait) {
-    var timeout = null;
-    return function() {
-        if(timeout !== null)
-                clearTimeout(timeout);
-        timeout = setTimeout(fn, wait);
+  GM_addStyle(`
+    /* 页面主区域宽度 */
+    .Topstory-mainColumn,
+    .QuestionWaiting-mainColumn,
+    .ListShortcut,
+    .SearchMain,
+    .pc-article-answer-text-chain,
+    .Question-mainColumn {
+      width: 100% !important;
     }
-}
 
-function listItemBeautify(selector){
-  $(selector).hover(function(){
-              $(this).css("box-shadow","1px 1px 10px #cccccc");
-              $(this).css("border-radius","0");
-           },function(){
-             $(this).css("box-shadow","none");
-         });
-}
-
-function cssWidth(selector,size){
-  $(selector).css('width',size);
-}
-
-function cssWidth100(selector){
-  cssWidth(selector,'100%');
-}
+    /* 隐藏侧栏、广告、推荐、视频等 */
+    .css-1qyytj7,
+    .is-collapsed > .RichContent-cover,
+    .Question-sideColumn,
+    .FollowButton,
+    .LabelContainer-wrapper,
+    .RichText-ADLinkCardContainer,
+    .Reward,
+    .Pc-word,
+    .Pc-word-new,
+    .VideoAnswerPlayer,
+    .TopstoryItem--advertCard,
+    .ZVideoItem,
+    .WriteArea,
+    #SearchMain + *,
+    .is-shown,
+    .Pc-Business-Card-PcTopFeedBanner,
+    .SearchResult-Card:has(.RelevantQuery),
+    .List-item:has(.VideoAnswerPlayer) {
+      display: none !important;
+    }
+  `);
+})();
