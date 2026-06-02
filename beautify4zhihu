@@ -19,7 +19,6 @@
     .QuestionWaiting-mainColumn,
     .ListShortcut,
     .SearchMain,
-    .pc-article-answer-text-chain,
     .Question-mainColumn {
       width: 100% !important;
     }
@@ -42,6 +41,8 @@
     .is-shown,
     .Pc-Business-Card-PcTopFeedBanner,
     .SearchResult-Card:has(.RelevantQuery),
+    .pc-article-answer-text-chain,
+    .pc-article-answer,
     .List-item:has(.VideoAnswerPlayer) {
       display: none !important;
     }
