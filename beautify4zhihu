@@ -19,15 +19,20 @@
     .QuestionWaiting-mainColumn,
     .ListShortcut,
     .SearchMain,
+    .Profile-mainColumn,
     .Question-mainColumn {
       width: 100% !important;
+    }
+
+    .Post-Row-Content-left{
+      width: 1000px !important;
     }
 
     /* 隐藏侧栏、广告、推荐、视频等 */
     .css-1qyytj7,
     .is-collapsed > .RichContent-cover,
     .Question-sideColumn,
-    .FollowButton,
+    .QuestionButtonGroup>.FollowButton,
     .LabelContainer-wrapper,
     .RichText-ADLinkCardContainer,
     .Reward,
