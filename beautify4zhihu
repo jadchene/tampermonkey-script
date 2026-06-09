@@ -32,7 +32,7 @@
     .css-1qyytj7,
     .is-collapsed > .RichContent-cover,
     .Question-sideColumn,
-    .QuestionButtonGroup>.FollowButton,
+    .AnswerItem-authorInfo>.FollowButton,
     .LabelContainer-wrapper,
     .RichText-ADLinkCardContainer,
     .Reward,
