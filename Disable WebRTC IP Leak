@@ -1,0 +1,40 @@
+// ==UserScript==
+// @name         Disable WebRTC IP Leak
+// @namespace    local.disable.webrtc
+// @version      1.0.0
+// @description  Disable WebRTC APIs to prevent IP leak
+// @match        *://*/*
+// @run-at       document-start
+// @grant        unsafeWindow
+// ==/UserScript==
+
+(function () {
+  'use strict';
+
+  const win = typeof unsafeWindow !== 'undefined' ? unsafeWindow : window;
+
+  function block(name) {
+    try {
+      Object.defineProperty(win, name, {
+        configurable: false,
+        enumerable: false,
+        get() {
+          console.warn(`[Disable WebRTC] ${name} is blocked`);
+          return undefined;
+        },
+        set() {
+          console.warn(`[Disable WebRTC] attempt to set ${name} was blocked`);
+        }
+      });
+    } catch (e) {
+      try {
+        win[name] = undefined;
+      } catch (_) {}
+    }
+  }
+
+  block('RTCPeerConnection');
+  block('webkitRTCPeerConnection');
+  block('mozRTCPeerConnection');
+  block('RTCDataChannel');
+})();
