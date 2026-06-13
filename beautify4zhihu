@@ -28,6 +28,10 @@
       width: 1000px !important;
     }
 
+    .QuestionHeader-main{
+      width: 980px !important;
+    }
+
     /* 隐藏侧栏、广告、推荐、视频等 */
     .css-1qyytj7,
     .is-collapsed > .RichContent-cover,
