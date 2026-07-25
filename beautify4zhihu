@@ -53,6 +53,7 @@
     .pc-article-answer-text-chain,
     .pc-article-answer,
     .AIAssistantPanelV2-container,
+    .pc-ylh-ad-shell,
     .List-item:has(.VideoAnswerPlayer) {
       display: none !important;
     }
