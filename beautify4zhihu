@@ -16,45 +16,34 @@
   GM_addStyle(`
     /* 页面主区域宽度 */
     .Topstory-mainColumn,
-    .QuestionWaiting-mainColumn,
-    .ListShortcut,
-    .SearchMain,
-    .Profile-mainColumn,
-    .Question-mainColumn {
+    .css-1k6eznt,
+    .css-2e1595,
+    .Question-mainColumn{
       width: 100% !important;
     }
 
-    .Post-Row-Content-left{
+    xxxxxx{
       width: 1000px !important;
     }
 
-    .QuestionHeader-main{
+    xxxxx{
       width: 980px !important;
     }
 
     /* 隐藏侧栏、广告、推荐、视频等 */
-    .css-1qyytj7,
-    .is-collapsed > .RichContent-cover,
-    .Question-sideColumn,
-    .AnswerItem-authorInfo>.FollowButton,
-    .LabelContainer-wrapper,
-    .RichText-ADLinkCardContainer,
-    .Reward,
-    .Pc-word,
-    .Pc-word-new,
-    .VideoAnswerPlayer,
-    .TopstoryItem--advertCard,
-    .ZVideoItem,
+    aside[class=css-14zw3x],
+    .css-11l7myy,
+    .css-w68inz,
+    .css-1hvptsu,
+    div[data-za-detail-view-path-module=RightSideBar],
     .WriteArea,
-    #SearchMain + *,
-    .is-shown,
-    .Pc-Business-Card-PcTopFeedBanner,
-    .SearchResult-Card:has(.RelevantQuery),
-    .pc-article-answer-text-chain,
+    .Recommendations-Main,
+    .CornerButtons--kanshan,
+    .FollowButton,
     .pc-article-answer,
-    .AIAssistantPanelV2-container,
-    .pc-ylh-ad-shell,
-    .List-item:has(.VideoAnswerPlayer) {
+    .RichContent-cover,
+    .Pc-word-new,
+    .css-9x8rdd{
       display: none !important;
     }
   `);
