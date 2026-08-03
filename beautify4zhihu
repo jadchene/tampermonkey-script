@@ -22,14 +22,6 @@
       width: 100% !important;
     }
 
-    xxxxxx{
-      width: 1000px !important;
-    }
-
-    xxxxx{
-      width: 980px !important;
-    }
-
     /* 隐藏侧栏、广告、推荐、视频等 */
     aside[class=css-14zw3x],
     .css-11l7myy,
