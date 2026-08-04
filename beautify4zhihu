@@ -40,7 +40,8 @@
     .Pc-word-new,
     .css-9x8rdd,
     aside[class=css-1krslmi],
-    .TopstoryItem--advertCard{
+    .TopstoryItem--advertCard,
+    .Reward{
       display: none !important;
     }
   `);
