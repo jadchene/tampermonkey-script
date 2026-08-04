@@ -19,7 +19,9 @@
     .css-1k6eznt,
     .css-2e1595,
     .Question-mainColumn,
-    .Topstory-container{
+    .Topstory-container,
+    .css-cm3ov3,
+    #ProfileHeader{
       width: 100% !important;
     }
 
@@ -36,7 +38,8 @@
     .pc-article-answer,
     .RichContent-cover,
     .Pc-word-new,
-    .css-9x8rdd{
+    .css-9x8rdd,
+    aside[class=css-1krslmi]{
       display: none !important;
     }
   `);
