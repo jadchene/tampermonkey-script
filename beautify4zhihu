@@ -18,7 +18,8 @@
     .Topstory-mainColumn,
     .css-1k6eznt,
     .css-2e1595,
-    .Question-mainColumn{
+    .Question-mainColumn,
+    .Topstory-container{
       width: 100% !important;
     }
 
