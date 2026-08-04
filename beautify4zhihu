@@ -39,7 +39,8 @@
     .RichContent-cover,
     .Pc-word-new,
     .css-9x8rdd,
-    aside[class=css-1krslmi]{
+    aside[class=css-1krslmi],
+    .TopstoryItem--advertCard{
       display: none !important;
     }
   `);
