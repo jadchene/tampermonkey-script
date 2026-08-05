@@ -21,7 +21,9 @@
     .Question-mainColumn,
     .Topstory-container,
     .css-cm3ov3,
-    #ProfileHeader{
+    #ProfileHeader,
+    .css-1wtjffm,
+    .SearchMain{
       width: 100% !important;
     }
 
