@@ -23,7 +23,8 @@
     .css-cm3ov3,
     #ProfileHeader,
     .css-1wtjffm,
-    .SearchMain{
+    .SearchMain,
+    .css-qkvzpm{
       width: 100% !important;
     }
 
@@ -43,7 +44,9 @@
     .css-9x8rdd,
     aside[class=css-1krslmi],
     .TopstoryItem--advertCard,
-    .Reward{
+    .Reward,
+   div[role="listitem"] + div,
+   .RelevantQuery{
       display: none !important;
     }
   `);
