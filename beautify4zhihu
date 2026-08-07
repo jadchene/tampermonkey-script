@@ -46,7 +46,9 @@
     .TopstoryItem--advertCard,
     .Reward,
    div[role="listitem"] + div,
-   .RelevantQuery{
+   .RelevantQuery,
+   .css-1bojrlv,
+   .QuestionButtonGroup-invite{
       display: none !important;
     }
   `);
