@@ -25,7 +25,8 @@
     .css-1wtjffm,
     .SearchMain,
     .css-qkvzpm,
-    .Search-container>div{
+    .Search-container>div,
+    .css-1ips9xo{
       width: 100% !important;
     }
 
