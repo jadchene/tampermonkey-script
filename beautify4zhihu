@@ -24,7 +24,8 @@
     #ProfileHeader,
     .css-1wtjffm,
     .SearchMain,
-    .css-qkvzpm{
+    .css-qkvzpm,
+    .Search-container>div{
       width: 100% !important;
     }
 
