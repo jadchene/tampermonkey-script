@@ -52,7 +52,8 @@
    .RelevantQuery,
    .css-1bojrlv,
    .QuestionButtonGroup-invite,
-   .AIAssistantPanelV2-container{
+   .AIAssistantPanelV2-container,
+   .TopstoryItem-isRecommend:has(>div > div > div > .ArticleItem){
       display: none !important;
     }
   `);
