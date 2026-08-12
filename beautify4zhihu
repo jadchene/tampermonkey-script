@@ -26,7 +26,8 @@
     .SearchMain,
     .css-qkvzpm,
     .Search-container>div,
-    .css-1ips9xo{
+    .css-1ips9xo,
+    div[itemprop=people]>div{
       width: 100% !important;
     }
 
