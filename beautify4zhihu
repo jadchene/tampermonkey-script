@@ -51,7 +51,8 @@
    div[role="listitem"] + div,
    .RelevantQuery,
    .css-1bojrlv,
-   .QuestionButtonGroup-invite{
+   .QuestionButtonGroup-invite,
+   .AIAssistantPanelV2-container{
       display: none !important;
     }
   `);
