@@ -31,6 +31,10 @@
       width: 100% !important;
     }
 
+    .Dropzone{
+      padding-right: 0 !important;
+    }
+
     /* 隐藏侧栏、广告、推荐、视频等 */
     aside[class=css-14zw3x],
     .css-11l7myy,
