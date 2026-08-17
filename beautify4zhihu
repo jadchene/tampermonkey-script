@@ -57,7 +57,8 @@
    .css-1bojrlv,
    .QuestionButtonGroup-invite,
    .AIAssistantPanelV2-container,
-   .TopstoryItem-isRecommend:has(>div > div > div > .ArticleItem){
+   .TopstoryItem-isRecommend:has(>div > div > div > .ArticleItem),
+   .pc-article-answer-big-img{
       display: none !important;
     }
   `);
