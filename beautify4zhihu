@@ -58,7 +58,8 @@
    .QuestionButtonGroup-invite,
    .AIAssistantPanelV2-container,
    .TopstoryItem-isRecommend:has(>div > div > div > .ArticleItem),
-   .pc-article-answer-big-img{
+   .pc-article-answer-big-img,
+   .Pc-Business-Card-PcTopFeedBanner{
       display: none !important;
     }
   `);
