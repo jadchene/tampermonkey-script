@@ -60,7 +60,9 @@
    .pc-article-answer-big-img,
    .Pc-Business-Card-PcTopFeedBanner,
    .css-4cffwv,
-   .css-e69dqy{
+   .css-e69dqy,
+   .css-wmwsyx,
+   .FollowButton.Button--secondary{
       display: none !important;
     }
   `);
