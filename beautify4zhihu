@@ -44,7 +44,6 @@
     .WriteArea,
     .Recommendations-Main,
     .CornerButtons--kanshan,
-    .FollowButton,
     .pc-article-answer,
     .RichContent-cover,
     .Pc-word-new,
@@ -59,7 +58,9 @@
    .AIAssistantPanelV2-container,
    .TopstoryItem-isRecommend:has(>div > div > div > .ArticleItem),
    .pc-article-answer-big-img,
-   .Pc-Business-Card-PcTopFeedBanner{
+   .Pc-Business-Card-PcTopFeedBanner,
+   .css-4cffwv,
+   .css-e69dqy{
       display: none !important;
     }
   `);
