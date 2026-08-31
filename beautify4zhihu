@@ -27,12 +27,17 @@
     .css-qkvzpm,
     .Search-container>div,
     .css-1ips9xo,
-    div[itemprop=people]>div{
+    div[itemprop=people]>div,
+    .css-1wzzhmc{
       width: 100% !important;
     }
 
     .Dropzone{
       padding-right: 0 !important;
+    }
+
+    .css-1mmgyrd{
+       width: 99vw !important;
     }
 
     /* 隐藏侧栏、广告、推荐、视频等 */
@@ -62,7 +67,16 @@
    .css-4cffwv,
    .css-e69dqy,
    .css-wmwsyx,
-   .FollowButton.Button--secondary{
+   .FollowButton.Button--secondary,
+   .pc-article-answer-text-chain,
+   .css-jghqwm,
+   .pc-ylh-ad-shell,
+   .pc-ylh-ad-shell--answer,
+   .css-txb60n,
+   .New-KfeCollection-CreateSaltCard,
+   .css-uf7ueu,
+   footer,
+   .Question-sideColumn{
       display: none !important;
     }
   `);
