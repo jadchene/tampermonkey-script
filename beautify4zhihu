@@ -14,69 +14,41 @@
   'use strict';
 
   GM_addStyle(`
-    /* 页面主区域宽度 */
-    .Topstory-mainColumn,
-    .css-1k6eznt,
-    .css-2e1595,
-    .Question-mainColumn,
-    .Topstory-container,
-    .css-cm3ov3,
-    #ProfileHeader,
-    .css-1wtjffm,
-    .SearchMain,
-    .css-qkvzpm,
-    .Search-container>div,
-    .css-1ips9xo,
-    div[itemprop=people]>div,
-    .css-1wzzhmc{
+   .Topstory-mainColumn,
+   .Question-mainColumn,
+   #SearchMain,
+   .Profile-mainColumn{
       width: 100% !important;
     }
 
-    .Dropzone{
-      padding-right: 0 !important;
+    .Popover{
+
     }
 
-    .css-1mmgyrd{
-       width: 99vw !important;
-    }
-
-    /* 隐藏侧栏、广告、推荐、视频等 */
-    aside[class=css-14zw3x],
-    .css-11l7myy,
-    .css-w68inz,
-    .css-1hvptsu,
-    div[data-za-detail-view-path-module=RightSideBar],
-    .WriteArea,
-    .Recommendations-Main,
-    .CornerButtons--kanshan,
-    .pc-article-answer,
-    .RichContent-cover,
-    .Pc-word-new,
-    .css-9x8rdd,
-    aside[class=css-1krslmi],
-    .TopstoryItem--advertCard,
-    .Reward,
-   div[role="listitem"] + div,
-   .RelevantQuery,
-   .css-1bojrlv,
-   .QuestionButtonGroup-invite,
-   .AIAssistantPanelV2-container,
-   .TopstoryItem-isRecommend:has(>div > div > div > .ArticleItem),
-   .pc-article-answer-big-img,
    .Pc-Business-Card-PcTopFeedBanner,
-   .css-4cffwv,
-   .css-e69dqy,
-   .css-wmwsyx,
-   .FollowButton.Button--secondary,
-   .pc-article-answer-text-chain,
-   .css-jghqwm,
-   .pc-ylh-ad-shell,
-   .pc-ylh-ad-shell--answer,
-   .css-txb60n,
-   .New-KfeCollection-CreateSaltCard,
-   .css-uf7ueu,
-   footer,
-   .Question-sideColumn{
+   .WriteArea,
+   div[data-za-detail-view-path-module='RightSideBar'],
+   .CornerButtons--kanshan,
+   .KfeCollection-CreateSaltCard,
+   a[href='https://www.zhihu.com/follow'],
+   a[href='https://www.zhihu.com/hot'],
+   a[href='https://www.zhihu.com/column-square'],
+   a[href='https://www.zhihu.com/ring-feeds'],
+   a[href='https://www.zhihu.com/project-square'],
+   a[href='https://www.zhihu.com/fiore/h5/vip-web'],
+   a[href='https://zhida.zhihu.com/'],
+   .SearchBar-askContainer,
+   .TopstoryItem--advertCard,
+   .RichContent-cover,
+   .Button--secondary,
+   .Reward,
+   .Pc-word-new,
+   footer[role=contentinfo],
+   .HotSearchCard,
+   .RelevantQuery,
+   .css-9x92ah,
+   .SearchTabs,
+   .Profile-sideColumn{
       display: none !important;
     }
   `);
