@@ -21,10 +21,6 @@
       width: 100% !important;
     }
 
-    .Popover{
-
-    }
-
    .Pc-Business-Card-PcTopFeedBanner,
    .WriteArea,
    div[data-za-detail-view-path-module='RightSideBar'],
@@ -48,7 +44,14 @@
    .RelevantQuery,
    .css-9x92ah,
    .SearchTabs,
-   .Profile-sideColumn{
+   .Profile-sideColumn,
+   .pc-article-answer-text-chain,
+   .pc-article-answer-big-img,
+   .AIAssistantPanelV2-container,
+   .pc-article-answer,
+   .pc-ylh-ad-shell,
+   .css-175oi2r,
+   .QuestionInvitation{
       display: none !important;
     }
   `);
