@@ -17,7 +17,8 @@
    .Topstory-mainColumn,
    .Question-mainColumn,
    #SearchMain,
-   .Profile-mainColumn{
+   .Profile-mainColumn,
+   .css-c0fani{
       width: 100% !important;
     }
 
@@ -33,6 +34,7 @@
    a[href='https://www.zhihu.com/project-square'],
    a[href='https://www.zhihu.com/fiore/h5/vip-web'],
    a[href='https://zhida.zhihu.com/'],
+   .css-wmwsyx,
    .SearchBar-askContainer,
    .TopstoryItem--advertCard,
    .RichContent-cover,
@@ -51,7 +53,9 @@
    .pc-article-answer,
    .pc-ylh-ad-shell,
    .css-175oi2r,
-   .QuestionInvitation{
+   .QuestionInvitation,
+   .css-1ni4jcm,
+   .RichText-ADLinkCardContainer{
       display: none !important;
     }
   `);
