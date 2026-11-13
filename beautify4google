@@ -36,7 +36,9 @@
     #tadsb,
     [jsname="tovEib"],
     table.SwU7oc.wHYlTd,
-    #Sva75c {
+    #Sva75c,
+    #oFNiHe,
+    .vbIt3d{
       display: none !important;
     }
 
@@ -66,8 +68,39 @@
       margin-left: 25% !important;
     }
 
-    .NDnoQ {
-      margin-left: 15% !important;
+    /* 搜索框居中，左右留出按钮空间 */
+    @media (min-width: 900px) {
+      #searchform {
+        display: block !important;
+      }
+
+      #searchform > .NDnoQ {
+        position: relative !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 200px !important;
+      }
+
+      #searchform #tsf {
+        width: 100% !important;
+        max-width: 861px !important;
+        min-width: 0 !important;
+        margin: 0 auto !important;
+      }
+
+      /* 取消搜索框原有的负边距 */
+      #searchform .A8SBwf {
+        margin: 0 !important;
+      }
+
+      /* 右侧分享、应用和头像完整显示 */
+      #searchform .Q3DXx {
+        position: absolute !important;
+        right: 16px !important;
+        top: 0 !important;
+        flex-shrink: 0 !important;
+      }
     }
 
     /* 搜索结果 hover 美化 */
