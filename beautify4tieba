@@ -1,0 +1,22 @@
+// ==UserScript==
+// @name         beautify4tieba
+// @namespace    http://tampermonkey.net/chenjd
+// @version      0.2
+// @description  simplify tieba style
+// @author       You
+// @match        https://tieba.baidu.com/*
+// @grant        GM_addStyle
+// @run-at       document-start
+// ==/UserScript==
+
+(function () {
+  'use strict';
+
+  GM_addStyle(`
+     .frs-right-sidebar,
+     .ylh-ad-container,
+     .right-nav-bar{
+         display:none !important
+     }
+  `);
+})();
